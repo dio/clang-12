@@ -4,6 +4,7 @@ set -ex
 
 curl -fsL https://github.com/dio/boringssl-fips/releases/download/fips-20210429-ninja-1.10.2/ninja-arm64.tar.xz | tar -xJ -C /usr/local/bin
 curl -fsLO https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-12.0.0.tar.gz
+tar -xzf llvmorg-12.0.0.tar.gz
 cd llvm-project-llvmorg-12.0.0
 mkdir build install
 INSTALL_PREFIX=`pwd`/install
